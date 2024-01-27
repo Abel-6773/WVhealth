@@ -1,0 +1,163 @@
+/* utilities */
+body {
+  background-color: #f5f9fc;
+  /* font-family: 'Poppins', sans-serif; */
+  font-family: "Roboto", sans-serif;
+}
+:root {
+  --primaryColor: #169fed;
+  --boxShadow: 0px 3px 10px 3px rgb(0, 0, 0, 0.15);
+}
+.container-lg {
+  max-width: 1100px;
+  margin: auto;
+}
+.btn {
+  padding: 15px 35px;
+  border-radius: 10px;
+  border: 0px solid rgb(0, 0, 0);
+  box-shadow: var(--boxShadow);
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+.btn-primary {
+  color: var(--primaryColor);
+  background: white;
+}
+.btn-container {
+  position: relative;
+}
+.btn-background {
+  background: var(--primaryColor);
+  position: absolute;
+  border-radius: 10px;
+  transform-origin: center;
+  transform: rotate(-2.5deg);
+  width: 147px;
+  height: 50px;
+  top: 0px;
+  z-index: -100;
+}
+.btn-secondary {
+  background-color: var(--primaryColor);
+  text-transform: capitalize;
+  color: white;
+}
+
+.txt-xl {
+  font-size: 2.5rem;
+  line-height: 3.2rem;
+  font-weight: 600;
+}
+.txt-lg {
+  font-size: 2rem;
+  font-weight: 400;
+}
+.txt-md {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.txt-sm {
+  line-height: 1.7rem;
+  font-weight: 300;
+}
+.txt-cntr {
+  text-align: center;
+}
+.span {
+  text-decoration: underline;
+  color: var(--primaryColor);
+}
+
+/* navigation */
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0px;
+}
+.nav-bar .links {
+  display: flex;
+  align-items: center;
+}
+.nav-bar a {
+  text-decoration: none;
+  color: black;
+}
+.nav-bar p {
+  padding: 10px;
+}
+
+/* hero */
+
+.hero {
+  /* height: 800px; */
+  background-color: #def2fb;
+}
+.hero-content {
+  padding-top: 50px;
+  display: flex;
+  align-items: center;
+}
+.hero-img img {
+  width: 100%;
+}
+.hero-img,
+.hero-text {
+  width: 50%;
+  padding: 0px 10px;
+}
+.hero-text h2 {
+  padding: 30px 0px;
+}
+.hero-text p {
+  margin-bottom: 50px;
+}
+
+/*services/care*/
+
+.service {
+  max-width: 300px;
+  background-color: #feefeb;
+}
+.service img {
+  display: block;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: auto;
+}
+.service.safety img {
+  background-color: #f25a3c;
+}
+.service.care img {
+  background-color: #cc7926;
+}
+.service.services img {
+  background-color: #739d1e;
+}
+.service.support img {
+  background-color: #169fed;
+}
+
+/*
+--text-color: #072615;
+    --blue: #169fed;
+    --light-blue: #BCF5FC;
+    --lighter-blue: #DEF2FB;
+    --white: #ffffff;
+    --red: #F25A3C;
+    --light-red: #FEEFEB;
+    --brown: #CC7926;
+    --light-brown: #FAF2E9;
+    --green: #739D1E;
+    --light-green: #F1F5E9;
+    --cyan: #20BBA1;
+    --light-cyan: #E9F8F6;
+    --gold: #EBAC45;
+    --black: #000000;
+    --grey: #A9A9A9;
+    --background-color: #F5F9FC;
+*/
