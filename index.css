@@ -1,3 +1,9 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 /* utilities */
 body {
   background-color: #f5f9fc;
@@ -9,22 +15,28 @@ body {
   --boxShadow: 0px 3px 10px 3px rgb(0, 0, 0, 0.15);
 }
 .container-lg {
-  max-width: 1100px;
+  max-width: 1368px;
+  margin: auto;
+}
+.container-md {
+  max-width: 957px;
   margin: auto;
 }
 .btn {
-  padding: 15px 35px;
+  padding: 25px 55px;
   border-radius: 10px;
   border: 0px solid rgb(0, 0, 0);
   box-shadow: var(--boxShadow);
   font-family: "Poppins", sans-serif;
   font-weight: bold;
+  font-size: 16px;
 }
 .btn-primary {
   color: var(--primaryColor);
   background: white;
 }
 .btn-container {
+  margin: 20px;
   position: relative;
 }
 .btn-background {
@@ -33,8 +45,8 @@ body {
   border-radius: 10px;
   transform-origin: center;
   transform: rotate(-2.5deg);
-  width: 147px;
-  height: 50px;
+  width: 205px;
+  height: 70px;
   top: 0px;
   z-index: -100;
 }
@@ -45,21 +57,27 @@ body {
 }
 
 .txt-xl {
-  font-size: 2.5rem;
-  line-height: 3.2rem;
+  font-size: 48px;
+  line-height: 60px;
   font-weight: 600;
+  padding: 20px 0px;
 }
 .txt-lg {
-  font-size: 2rem;
-  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 600;
+  padding: 15px 0px;
 }
 .txt-md {
-  font-size: 1.3rem;
+  font-size: 24px;
   font-weight: 600;
+  padding: 10px 0px;
 }
 .txt-sm {
-  line-height: 1.7rem;
+  font-size: 16px;
+  line-height: 30px;
   font-weight: 300;
+  padding: 5px 0px;
 }
 .txt-cntr {
   text-align: center;
@@ -76,7 +94,6 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 25px 0px;
 }
 .nav-bar .links {
   display: flex;
@@ -87,14 +104,17 @@ body {
   color: black;
 }
 .nav-bar p {
-  padding: 10px;
+  margin: 10px;
+}
+.nav-bar img {
+  width: 150px;
 }
 
 /* hero */
 
 .hero {
   /* height: 800px; */
-  background-color: #def2fb;
+  background-color: #e9f8f6;
 }
 .hero-content {
   padding-top: 50px;
@@ -118,46 +138,343 @@ body {
 
 /*services/care*/
 
+.care {
+  padding-top: 80px;
+}
+.care h2 {
+}
+.service-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  width: fit-content;
+  margin: 80px auto;
+}
 .service {
   max-width: 300px;
   background-color: #feefeb;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: var(--boxShadow);
+  transition: opacity 0.2s linear;
 }
-.service img {
+.service div {
   display: block;
   width: 150px;
   height: 150px;
   border-radius: 50%;
   margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
 }
-.service.safety img {
+.service h3 {
+  margin-top: 50px;
+}
+.service.safety div {
   background-color: #f25a3c;
 }
-.service.care img {
+.service.care div {
   background-color: #cc7926;
 }
-.service.services img {
+.service.services div {
   background-color: #739d1e;
 }
-.service.support img {
+.service.support div {
   background-color: #169fed;
 }
 
-/*
---text-color: #072615;
-    --blue: #169fed;
-    --light-blue: #BCF5FC;
-    --lighter-blue: #DEF2FB;
-    --white: #ffffff;
-    --red: #F25A3C;
-    --light-red: #FEEFEB;
-    --brown: #CC7926;
-    --light-brown: #FAF2E9;
-    --green: #739D1E;
-    --light-green: #F1F5E9;
-    --cyan: #20BBA1;
-    --light-cyan: #E9F8F6;
-    --gold: #EBAC45;
-    --black: #000000;
-    --grey: #A9A9A9;
-    --background-color: #F5F9FC;
-*/
+/*hover effect*/
+.service:hover {
+  opacity: 0.6;
+}
+
+/*Doctors section*/
+
+.doctors-section {
+  margin-top: 140px;
+}
+.doc-paitent-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.doc-paitent-section img {
+  max-width: 550px;
+  border-radius: 20px;
+}
+.doc-paitent-section .doc-txt {
+  max-width: 550px;
+}
+.doctors-section .btn-container {
+  width: fit-content;
+  margin: 40px 0px;
+}
+.doc-services {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+  width: fit-content;
+  margin: 120px auto 120px auto;
+}
+.doc-service {
+  max-width: 340px;
+  background: white;
+  padding: 30px 25px;
+  border-radius: 20px;
+  box-shadow: var(--boxShadow);
+}
+.service-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.service-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.doc-service p {
+  max-width: 75%;
+}
+.doc-service img {
+  height: 70px;
+  padding: 15px;
+  margin-right: 20px;
+}
+.emergency img {
+  width: 92px;
+  background-color: #def2fb;
+  border-radius: 15px;
+}
+.appointment img {
+  width: 82px;
+  background-color: #feefeb;
+  border-radius: 15px;
+}
+.find-doctor img {
+  width: 72px;
+  background-color: #faf2e9;
+  border-radius: 15px;
+}
+
+/*appointment section*/
+
+.appointment-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 120px;
+}
+.appointment-txt {
+  max-width: 550px;
+}
+.appointment-img img {
+  max-width: 650px;
+  border-radius: 20px;
+}
+.appointment-section ul {
+  list-style-type: none;
+  margin: auto;
+  display: grid;
+  max-width: 450px;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 40px;
+  justify-items: start;
+  row-gap: 15px;
+}
+.appointment-section h3 {
+  margin-top: 40px;
+}
+.appointment-section i {
+  padding-right: 10px;
+}
+
+/*testimonial section */
+.testimonials {
+  background-color: rgba(211, 251, 250, 0.7);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 60px;
+  padding: 60px 0px;
+  border-radius: 30px;
+}
+.testimony {
+  max-width: 600px;
+}
+.testimony i {
+  padding: 5px;
+}
+.testimonial-img {
+  position: relative;
+  width: fit-content%;
+  margin-left: 100px;
+}
+.doe {
+  position: absolute;
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+#jane {
+  width: 100px;
+  height: 100px;
+  top: 160px;
+  left: 140px;
+}
+.jhon-one {
+  top: 10px;
+  left: 120px;
+}
+.jhon-two {
+  top: 190px;
+  left: 10px;
+}
+.jane-two {
+  top: 300px;
+  left: 260px;
+}
+.jane-three {
+  top: 330px;
+  left: 90px;
+}
+
+/*news*/
+.news {
+  margin-top: 60px;
+  margin-bottom: 150px;
+}
+.news h2 {
+  margin: 60px 0px;
+}
+.news-section,
+.reporter,
+.aside-header,
+.article {
+  display: flex;
+  justify-content: space-between;
+}
+.news-main {
+  max-width: 700px;
+}
+.aside {
+  max-width: 40%;
+}
+.reporter {
+  margin-top: 60px;
+}
+.reporter div {
+  display: flex;
+  align-items: center;
+}
+.reporter img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+.reporter p {
+  margin-left: 10px;
+}
+.news-main > img {
+  border-radius: 20px;
+}
+.aside-header p {
+  font-size: 24px;
+}
+.aside-header p:nth-of-type(1) {
+  text-decoration: underline;
+  text-decoration-color: #ebac45;
+  text-underline-offset: 10px;
+}
+.article {
+  margin-bottom: 40px;
+  align-items: center;
+}
+.article a {
+  text-decoration: none;
+  color: #f25a3c;
+}
+.article img {
+  border-radius: 10px;
+  margin-right: 40px;
+}
+.cm-sn p {
+  text-decoration: underline;
+  text-decoration-color: #ebac45;
+  text-underline-offset: 10px;
+  font-size: 24px;
+}
+.cm-sn img {
+  margin: 10px 40px 0px 0px;
+  border-radius: 15px;
+}
+
+/*footer section*/
+.footer {
+  background-image: url(https://wvprogram.github.io/healthcareldp/images/footer-bg.jpg);
+  color: white;
+}
+.footer-content {
+  padding: 80px 20px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 2fr;
+  justify-items: space-between;
+}
+.contact {
+  margin: 30px 0px;
+}
+.footer i {
+  margin-right: 40px;
+}
+.copy-right {
+  margin-top: 100px;
+}
+.form-section {
+  background: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin: 20px 20px 0px 20px;
+  max-height: 225px;
+}
+.form-section button {
+  background-color: #4791ff;
+  padding: 15px 25px;
+  border-radius: 10px;
+  color: #ffffff;
+  width: 100%;
+}
+
+.form-section input {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0px;
+  border: 1px rgb(213, 205, 205) solid;
+  border-radius: 5px;
+}
+.form-section p,
+.form-section h3 {
+  color: black;
+}
+/* --text-color: #072615;
+      --blue: #169fed;
+      --light-blue: #BCF5FC;
+      --lighter-blue: #DEF2FB;
+      --white: #ffffff;
+      --red: #F25A3C;
+      --light-red: #FEEFEB;
+      --brown: #CC7926;
+      --light-brown: #FAF2E9;
+      --green: #739D1E;
+      --light-green: #F1F5E9;
+      --cyan: #20BBA1;
+      --light-cyan: #E9F8F6;
+      --gold: #EBAC45;
+      --black: #000000;
+      --grey: #A9A9A9;
+      --background-color: #F5F9FC;
+   */
