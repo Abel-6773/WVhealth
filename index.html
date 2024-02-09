@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>WVhealth</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -67,12 +67,18 @@
               alt=""
             />
           </div>
+          <div class="hero-mbl-img">
+            <img
+              src="https://wvprogram.github.io/healthcareldp/images/heading-doctor.png"
+              alt=""
+            />
+          </div>
         </div>
       </section>
 
       <!-- services/care -->
 
-      <section class="care container-lg">
+      <section class="care-section container-lg">
         <h2 class="txt-cntr txt-lg container-md">
           Top notch quality <span class="span">care</span>
         </h2>
@@ -150,7 +156,7 @@
             <p class="txt-sm">
               At WVHealth, we believe that everyone deserves access to
               high-quality healthcare, no matter where they are or what their
-              circumstances may be.
+              circumstances are.
             </p>
             <p class="txt-sm">
               That's why we've created a comprehensive platform that connects
@@ -253,8 +259,8 @@
               <i
                 class="fa-regular fa-circle-check fa-xl"
                 style="color: #f29c07"
-              ></i>
-              Blood Sugar Level
+              ></i
+              >Blood Sugar Level
             </li>
           </ul>
         </div>
@@ -339,10 +345,12 @@
         </h2>
         <div class="news-section">
           <div class="news-main">
-            <img
-              src="https://wvprogram.github.io/healthcareldp/images/women-science.jpg"
-              alt=""
-            />
+            <div class="news-main-img">
+              <img
+                src="https://wvprogram.github.io/healthcareldp/images/women-science.jpg"
+                alt=""
+              />
+            </div>
             <div class="reporter">
               <div>
                 <img
@@ -356,28 +364,30 @@
                 <p>2/12/2023</p>
               </div>
             </div>
-            <h3 class="txt-md">
-              Join Us for International Day of Women and Girls in Science
-            </h3>
-            <p class="txt-sm">
-              International Day for Women and Girls in Science is celebrated
-              every year on February 11th to raise awareness about the
-              underrepresentation of women in science and to promote gender
-              equality in the field of science. This day acknowledges the
-              significant contributions that women and girls have made to
-              science, while also highlighting the challenges they face in
-              pursuing careers in STEM (science, technology, engineering, and
-              math) fields.
-            </p>
-            <p class="txt-sm">
-              Despite the progress made in recent years, women and girls
-              continue to face various barriers to their participation in
-              science, including gender stereotypes, discrimination, lack of
-              representation, and insufficient access to resources and
-              opportunities. It is essential to recognize the valuable
-              contributions of women and girls in science and to promote and
-              support their participation in STEM fields...
-            </p>
+            <div class="news-main-txt">
+              <h3 class="txt-md">
+                Join Us for International Day of Women and Girls in Science
+              </h3>
+              <p class="txt-sm">
+                International Day for Women and Girls in Science is celebrated
+                every year on February 11th to raise awareness about the
+                underrepresentation of women in science and to promote gender
+                equality in the field of science. This day acknowledges the
+                significant contributions that women and girls have made to
+                science, while also highlighting the challenges they face in
+                pursuing careers in STEM (science, technology, engineering, and
+                math) fields.
+              </p>
+              <p class="txt-sm">
+                Despite the progress made in recent years, women and girls
+                continue to face various barriers to their participation in
+                science, including gender stereotypes, discrimination, lack of
+                representation, and insufficient access to resources and
+                opportunities. It is essential to recognize the valuable
+                contributions of women and girls in science and to promote and
+                support their participation in STEM fields...
+              </p>
+            </div>
           </div>
           <aside class="aside">
             <div class="aside-header">
@@ -392,7 +402,7 @@
                     alt=""
                   />
                 </div>
-                <div>
+                <div class="article-txt">
                   <h3 class="txt-md">
                     Burnout and Bias in the medical field...
                   </h3>
@@ -410,7 +420,7 @@
                     alt=""
                   />
                 </div>
-                <div>
+                <div class="article-txt">
                   <h3 class="txt-md">
                     Anti-aging Early Detection Research Study...
                   </h3>
@@ -428,7 +438,7 @@
                     alt=""
                   />
                 </div>
-                <div>
+                <div class="article-txt">
                   <h3 class="txt-md">Healthy Living with Graves Disease...</h3>
                   <p class="txt-sm">
                     <a href=""
@@ -459,7 +469,7 @@
 
     <footer class="footer">
       <div class="footer-content container-lg">
-        <div class="footer-grid">
+        <div class="footer-grid contacts">
           <img
             src="https://wvprogram.github.io/healthcareldp/images/logo.png"
             alt=""
@@ -478,11 +488,8 @@
           <i class="fa-brands fa-facebook fa-2xl"></i>
           <i class="fa-brands fa-instagram fa-2xl"></i>
           <i class="fa-brands fa-linkedin fa-2xl"></i>
-          <p class="copy-right">
-            &copy;Copyright 2023 WVHealth All Rights Reserved.
-          </p>
         </div>
-        <div class="footer-grid">
+        <div class="footer-grid info">
           <h3 class="txt-md">Company</h3>
           <div class="txt-sm">
             <p>About Us</p>
@@ -491,7 +498,7 @@
             <p>Careers</p>
           </div>
         </div>
-        <div class="footer-grid">
+        <div class="footer-grid resources">
           <h3 class="txt-md">Resources</h3>
           <div class="txt-sm">
             <p>Privacy Policy</p>
@@ -512,16 +519,9 @@
             <button class="btn">Subscribe</button>
           </form>
         </div>
-        <!-- <div class="footer-grid">
-          <h3 class="txt-md">Newsletter</h3>
-          <p class="txt-sm">
-            Subscribe to our newsletter to get the latest information from us.
-          </p>
-          <form action="post">
-            <input type="email" placeholder="Email Address" />
-            <button>Subscribe</button>
-          </form>
-        </div> -->
+      </div>
+      <div class="copy-right">
+        <p>&copy;Copyright 2023 WVHealth All Rights Reserved.</p>
       </div>
     </footer>
   </body>
