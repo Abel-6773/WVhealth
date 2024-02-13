@@ -16,6 +16,7 @@
       src="https://kit.fontawesome.com/0a23c88eda.js"
       crossorigin="anonymous"
     ></script>
+    <script src="index.js"></script>
   </head>
   <body>
     <!-- navigation/header -->
@@ -30,14 +31,32 @@
             />
           </div>
           <div class="links txt-sm">
-            <p><a href="">Services</a></p>
-            <p><a href="">Doctors</a></p>
-            <p><a href="">Paitents</a></p>
-            <p><a href="">Support</a></p>
-            <p><a href="">Pricing</a></p>
-            <div class="btn-container">
+            <p><a href="#services">Services</a></p>
+            <p><a href="#doctors">Doctors</a></p>
+            <p><a href="#testimonials">Paitents</a></p>
+            <p><a href="#news">News</a></p>
+            <p><a href="#support">Support</a></p>
+            <a class="btn-container">
               <button class="btn btn-primary">Get Started</button>
               <div class="btn-background"></div>
+            </a>
+          </div>
+          <div class="hb-icon">
+            <div class="icon-bar"></div>
+            <div class="icon-bar"></div>
+            <div class="icon-bar"></div>
+          </div>
+          <div class="hb-menu txt-cntr">
+            <div class="hb-links">
+              <p><a href="#services">Services</a></p>
+              <p><a href="#doctors">Doctors</a></p>
+              <p><a href="#testimonials">Paitents</a></p>
+              <p><a href="#news">News</a></p>
+              <p><a href="#support">Support</a></p>
+              <a class="btn-container">
+                <button class="btn btn-primary">Get Started</button>
+                <div class="btn-background"></div>
+              </a>
             </div>
           </div>
         </div>
@@ -59,7 +78,9 @@
               Welcome to WVHealth, where we are committed to delivering
               exceptional healthcare services to patients around the world.
             </p>
-            <button class="btn btn-secondary">Make Appointment</button>
+            <a href=""
+              ><button class="btn btn-secondary">Make Appointment</button></a
+            >
           </div>
           <div class="hero-img">
             <img
@@ -78,7 +99,7 @@
 
       <!-- services/care -->
 
-      <section class="care-section container-lg">
+      <section id="services" class="care-section container-lg">
         <h2 class="txt-cntr txt-lg container-md">
           Top notch quality <span class="span">care</span>
         </h2>
@@ -140,7 +161,7 @@
 
       <!-- Doctors section -->
 
-      <section class="doctors-section container-lg">
+      <section id="doctors" class="doctors-section container-lg">
         <div class="doc-paitent-section">
           <div class="doc-img">
             <img
@@ -164,10 +185,10 @@
               provides doctors and healthcare professionals with the resources
               they need to deliver the best possible care.
             </p>
-            <div class="btn-container">
+            <a class="btn-container contact-us">
               <button class="btn btn-primary">Contact Us</button>
               <div class="btn-background"></div>
-            </div>
+            </a>
           </div>
         </div>
         <div class="doc-services">
@@ -212,7 +233,7 @@
 
       <!-- appointment -->
 
-      <section class="appointment-section container-lg">
+      <section id="appointment" class="appointment-section container-lg">
         <div class="appointment-txt">
           <h2 class="txt-lg">
             Make a <span class="span">free appointment </span> with one of our
@@ -274,7 +295,7 @@
 
       <!-- testimonials section -->
 
-      <section class="testimonials-section container-lg">
+      <section id="testimonials" class="testimonials-section container-lg">
         <h2 class="txt-lg txt-cntr">
           Let's see what <span class="span"> patient</span> says?
         </h2>
@@ -339,7 +360,7 @@
 
       <!-- news-section -->
 
-      <section class="news container-lg">
+      <section id="news" class="news container-lg">
         <h2 class="txt-lg txt-cntr">
           Our Latest <span class="span"> News</span>
         </h2>
@@ -468,7 +489,7 @@
     <!-- footer -->
 
     <footer class="footer">
-      <div class="footer-content container-lg">
+      <div id="support" class="footer-content container-lg">
         <div class="footer-grid contacts">
           <img
             src="https://wvprogram.github.io/healthcareldp/images/logo.png"
